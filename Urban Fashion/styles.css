@@ -71,3 +71,22 @@ p {
     position: relative;
     left: 500px
 }
+
+.fb {
+    position: relative;
+    bottom: 60px;
+}
+
+.in {
+    position: relative;
+    bottom: 20px;
+}
+
+.tw {
+    position: relative;
+    top: 20px;
+}
+
+.li {
+    position: relative;
+    top: 60px;
