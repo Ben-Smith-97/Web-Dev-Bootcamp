@@ -1,0 +1,32 @@
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.boxleft {
+    background-color: aqua;
+    color: blue;
+    width: 200px;
+height: 200px;
+}
+
+.boxmid {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+    z-index: 4;
+    position: absolute;
+}
+
+.boxright {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+}
+
+.box:hover {
+    transform: scale(1.5);
+}
