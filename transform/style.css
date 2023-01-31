@@ -1,0 +1,64 @@
+.card-container {
+    background-color: rgb(177, 185, 211);
+  }
+  .card {
+
+  }
+  
+  .card1 {
+    transform: skewy(-10deg);
+    cursor: grab;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  
+  .card2 {
+    transform: skewy(-5deg);
+    cursor: grab;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  
+  .card3 {
+    cursor: grab;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+
+  .card4 {
+    transform: skewy(5deg);
+    cursor: grab;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+
+  .card5 {
+    transform: skewy(10deg);
+    cursor: grab;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+    
+
+.main {
+}
+
+.card1:hover {
+  transform: scale(1.2);
+}
+
+.card2:hover {
+  transform: scale(1.2);
+}
+
+.card3:hover {
+  transform: scale(1.2);
+}
+
+.card4:hover {
+  transform: scale(1.2);
+}
+
+.card5:hover {
+  transform: scale(1.2);
+}
