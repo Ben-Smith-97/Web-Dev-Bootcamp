@@ -6,10 +6,8 @@
   }
   
   .card1 {
-    transform: skewy(-10deg);
-    cursor: grab;
-    transition-property: all;
-    transition-duration: 1s;
+    animation-name: myframes;
+    animation-duration: 2s;
   }
   
   .card2 {
@@ -61,4 +59,14 @@
 
 .card5:hover {
   transform: scale(1.2);
+}
+
+@keyframes myframes{
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
