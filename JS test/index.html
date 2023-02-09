@@ -12,40 +12,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    
     <body>
-        <img id="image" src="unsplash1.png" style="width:300px">
-        <br>
-        <button class="changeimage" onclick="changeimage()">Change Image</button>
-        <script>
-        function changeimage() {
-        const mainImage = document.getElementById("image");
-        const img = 'unsplash1.png';
-        const img1 = 'unsplash2.png';
-        
-        if ( mainImage.src === img1 ) {
-            mainImage.src = img2;
-        } else {
-            mainImage.src = img1;
-            console.log(img1);
-        }
-}
-        </script>
-
-
-
-
-
-
-
-
-
-
-
-
+ <script type = "text/javascript">
+         <!--
+            function Warn() {
+               alert ("This is a warning message!");
+               document.write ("This is a warning message!");
+            }
+         //-->
+      </script>     
+   </head>
+   
+   <body>
+      <p>Click the following button to see the result: </p>      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "Warn();" />
+      </form>     
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <script src="script.js" async defer></script>
     </body>
 </html>

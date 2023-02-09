@@ -7,45 +7,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Shopping List</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    
     <body>
-        <img id="image" src="unsplash1.png" style="width:300px">
-        <br>
-        <button class="changeimage" onclick="changeimage()">Change Image</button>
-        <script>
-        function changeimage() {
-        const mainImage = document.getElementById("image");
-        const img = 'unsplash1.png';
-        const img1 = 'unsplash2.png';
-        
-        if ( mainImage.src === img1 ) {
-            mainImage.src = img2;
-        } else {
-            mainImage.src = img1;
-            console.log(img1);
-        }
-}
-        </script>
-
-
-
-
-
-
-
-
-
-
-
+        <div id="header">
+            <h2>Add an item below</h2>
+            <input type="text" id="inputText">
+            <button onclick="addToList()">Add Item</button>
+            <ul id="list"></ul>
+        </div>
+        <script src="script.js"></script>
 
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    
     </body>
 </html>

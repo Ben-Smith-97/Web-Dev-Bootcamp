@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js intro- part 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer async></script>
+</head>
+<body>
+    <div id="example">
+     My Website
+    </div>
+    <a href="https://www.youtube.com/" id="mylink">YouTube</a>
+    <form action="">
+        <input type="text" id="myinput" >
+        <label for=""></label>
+    </form>
+     <div class="box">
+        A Box
+    </div>
+    <button id="trigger" onclick="changeBoxColour()">Click me</button>
+
+    <script>
+        const mybox = document.querySelector(".box");
+
+        function changeBoxColour() {
+
+            mybox.classList.add('inverse');
+        }
+    </script>
+</body>
+</html>

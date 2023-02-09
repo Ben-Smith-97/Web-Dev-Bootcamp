@@ -1,0 +1,10 @@
+body {
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+border: 0px;
+background-color: black;
+color: white
+}
