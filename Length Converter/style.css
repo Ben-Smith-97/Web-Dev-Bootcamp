@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+.converter-body {
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(90deg, rgb(96, 45, 190) 0%, rgb(194, 34, 154) 100%);
+    margin: 0 auto;
+    padding: 3%;
+    box-shadow: 0px 0px 2px 1px rgba(75, 72, 75, 0.534);
+}
+.converter-title{
+    text-align: center;
+    margin: 13px 0px;
+    color: white;
+}
+input {
+    height: 25px;
+    text-align: center;
+}
+#input{
+    margin-left: 15px;
+}
+#inputType,#resultType{
+    width: 176px;
+    margin-left: 15px;
+}
