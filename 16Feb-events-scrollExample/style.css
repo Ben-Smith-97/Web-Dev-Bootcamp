@@ -1,0 +1,14 @@
+.fixed-div {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:1rem;
+    font-size: 2rem;
+    background-color: yellow;
+    display:none;
+}
+
+.fixed-div.visible {
+    display:block;
+}
