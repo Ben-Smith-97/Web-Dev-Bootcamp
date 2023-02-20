@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Users:</h1>
+        <ul class="list-container">
+
+        </ul>
+
+        <script>
+            fetch('https://reqres.in/api/users')
+            .then(response => response.json())
+            .then(json => {
+        console.log(json.data);
+        const markup = json.data.map(el => {
+        return `
+        <li>
+            <div>
+              <img src="${el.avatar}">
+    
+            </div>
+             <div> 
+                 <span>${el.first_name}</span>
+                 <span>${el.last_name}</span>
+                
+             </div> 
+             <p class="email">${el.email}</p>  
+            </li>
+        `
+    });
+    console.log(markup);
+    document.querySelector('.list-container').innerHTML = markup.join('');
+  
+})
+        </script>
+        <script src="script.js">
+            
+        </script>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
